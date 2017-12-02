@@ -123,7 +123,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1.6"
-            android:text="1.1 KM"
+            android:text=""
             android:textSize="24dp"
             android:textColor="#a2c86f"
             android:padding="2dp"/>
@@ -132,7 +132,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1.4"
-            android:text="Temps estimé : 15 Minutes"
+            android:text=""
             android:textColor="@android:color/black"
             android:textSize="16dp"
             android:padding="4dp"/>

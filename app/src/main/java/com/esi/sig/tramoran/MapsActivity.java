@@ -209,13 +209,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Selectionner la station de depart");
-        builder.setMultiChoiceItems(allStationNames, null, new DialogInterface.OnMultiChoiceClickListener() {
+        builder.setSingleChoiceItems(allStationNames,0, new DialogInterface.OnClickListener() {
             @Override
-            public void onClick(DialogInterface dialog, int which, boolean isChecked) {
-                if (isChecked) {
-                    selectedDeparture = which;
-                    Log.i("aaa",selectedDeparture+"");
-                }
+            public void onClick(DialogInterface dialog, int which) {
+                selectedDeparture = which;
             }
         })
                 .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
@@ -236,12 +233,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         final String[] aa1 = allStationNames;
         AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
         builder1.setTitle("Selectionner la station destination");
-        builder1.setMultiChoiceItems(aa1, null, new DialogInterface.OnMultiChoiceClickListener() {
+        builder1.setSingleChoiceItems(allStationNames, 0, new DialogInterface.OnClickListener() {
             @Override
-            public void onClick(DialogInterface dialog, int which, boolean isChecked) {
-                if (isChecked) {
-                    selectedDestination = which;
-                }
+            public void onClick(DialogInterface dialog, int which) {
+                selectedDestination = which;
             }
         })
                 .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
